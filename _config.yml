@@ -26,8 +26,8 @@ baseurl: ""
 url: "https://NLueg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: NLueg
 
-remote_theme: thelehhman/texture
-theme: texture
+remote_theme: thelehhman/plainwhite-jekyll
+theme: plainwhite
 
 # Build settings
 plugins:
