@@ -11,6 +11,10 @@ show_excerpts: true # set to true to show excerpts on the homepage
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
+  
+
+remote_theme: thelehhman/plainwhite-jekyll  
+
 plainwhite:
   name: Adam Denisov
   tagline: Developer. Designer
@@ -48,8 +52,6 @@ plainwhite:
 #header_pages:
 # - about.md
 
-# Build settings
-theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
