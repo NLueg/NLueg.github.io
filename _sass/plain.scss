@@ -53,31 +53,23 @@ main {
         margin: 0 auto;
         max-width: 1440px;
     }
-    @media screen and (max-width: 1280px) {
-        margin: 0 75px;
-    }
-    @media screen and (max-width: 1024px) {
-        margin: 0 35px;
-    }
     @media screen and (max-width: $mobileW) {
         margin: 0 10px;
+        margin-top: 50px;
         flex-direction: column;
     }
-    @media screen and (max-width: $smallMobileW) {
-        margin: 0;
-    }
-    .content {
+    .content { 
         @media screen and (min-width: $mobileW + 1) {
             max-width: calc(100% - #{$leftWidth});
             margin-left: $leftWidth;
         }
     }
-    .about {
+    .about,
+    .about-responsive {
         display: flex;
         height: 100vh;
         padding-bottom: 15vh;
         @media screen and (max-width: $mobileW) {
-            margin-top: 10vh;
             height: auto;
             padding: 10vh 0;
         }
@@ -109,6 +101,11 @@ main {
         }
         img {
             max-width: 150px;
+        }
+    }
+    .about-responsive {
+        @media screen and (max-width: $mobileW) {
+            display: none;
         }
     }
 }
@@ -166,7 +163,6 @@ main {
 .posts,
 .post-container {
     list-style-type: none;
-    margin-top: 45px;
     margin-bottom: 45px;
     margin-right: 30px;
     @media screen and (max-width: $smallMobileW) {
@@ -195,6 +191,7 @@ main {
 }
 
 #posts-label {
+    margin-top: 20px;
     border-bottom: 1px solid #eee;
     font-size: 15px;
     color: #777;

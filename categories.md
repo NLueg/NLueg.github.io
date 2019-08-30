@@ -5,6 +5,5 @@ categories:
     - openVALIDATION
     - IDE
     - bachelor-thesis
-    - Texteditor
-    
+    - Texteditor 
 ---
