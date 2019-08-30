@@ -43,10 +43,24 @@ for tag in old_tags:
 if not os.path.exists(tag_dir):
     os.makedirs(tag_dir)
 
+total_tags_string = "\n    "
+
 for tag in total_tags:
+    total_tags_string += "- " + tag + "\n    "
+
     tag_filename = tag_dir + tag + '.md'
     f = open(tag_filename, 'a')
-    write_str = '---\nlayout: tagpage\ntitle: \"Tag: ' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n'
+    write_str = '---\nlayout: tagpage\ntitle: \"Category: ' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n'
     f.write(write_str)
     f.close()
 print("Tags generated, count", total_tags.__len__())
+
+filename = "categories.md"
+old_categories = glob.glob(filename)
+for tag in old_categories:
+    os.remove(tag)
+
+f = open(filename, 'a')
+write_str = '---\nlayout: categories\ntitle: \"Available Categories\"\ncategories: ' + total_tags_string + '\n---\n'
+f.write(write_str)
+f.close()

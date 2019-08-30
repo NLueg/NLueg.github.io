@@ -2,7 +2,7 @@ title: Nico Lueg | Homepage
 author: Nico Lueg
 email: nicolueg@gmx.de
 description: > # this means to ignore newlines until "show_exerpts:"
-  On this side I want to share my experiences that I made while devoloping.
+  On this side I want to share my experiences that I made while developing.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format

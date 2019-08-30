@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Hello World!"
-description: This is my first post on my new website.
-date:   2019-08-28 21:03:36 +0530
-categories: Javascript NodeJS
+title:  My Current Work
+description: This is mawadawdawdy first post on my new website.
+date:   2019-08-08 21:03:36 +0630
+categories: bachelor-thesis IDE Texteditor openVALIDATION
 ---
 
 This is my first post.

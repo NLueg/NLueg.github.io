@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: NodeJS"
-tag: NodeJS
+title: "Category: IDE"
+tag: IDE
 robots: noindex
 ---
