@@ -7,11 +7,11 @@ layout: default-responsive-about
     <h2 class="post-title">{{ page.title | escape }}</h2>
   </a>
   <div class="post-meta">
-    <ul class="post-categories">
+    <div class="post-categories">
 	  {% for tag in page.categories %}
 	  {% capture tag_name %}{{ tag }}{% endcapture %}
 		<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
 	  {% endfor %}
-    </ul>
+    </div>
   </div>
 </div>
