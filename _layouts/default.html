@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	{%- include head.html -%}
-</head>
-<body>
-	<main class="container">
-		<section class="about">
-			<img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}">
-			<h2>{{ site.plainwhite.name }}</h2>
-			<p class="tagline">{{ site.plainwhite.tagline }}</p>
-			<ul class="social">
-				<a href="https://github.com/{{ site.plainwhite.social_links.github }}"><li><i class="icon-github-circled"></i></li></a>
-				<a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"><li><i class="icon-linkedin-squared"></i></li></a>
-				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"><li><i class="icon-twitter-squared"></i></li></a>
-			</ul>
-			<p>&copy; 2019</p>
-		</section>
-		<section class="content">
-			{{ content }}
-		</section>
-	</main>
-	{%- if site.plainwhite.analytics_id -%}
-	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', '{{ site.plainwhite.analytics_id }}');
-	</script>
-	{%- endif -%}
+<head>
+    {%- include head.html -%}
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
+        <a class="navbar-brand" href="/">Home</a>
+
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav">
+                {% assign links = site.data.navigation %} {% for link in links %}
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="about">
+            <img src="{{ " /assets/portfolio.png " | relative_url }}" alt="{{ site.plainwhite.name }}">
+            <h2><a href="/about">{{ site.plainwhite.name }}</a></h2>
+            <div class="tagline">
+                <div>Computer Science Student.</div>
+                </br>
+                <div>Developer.</div>
+            </div>
+            <ul class="social">
+                <a href="https://github.com/{{ site.plainwhite.social_links.github }}">
+                    <li><i class="icon-github-circled"></i></li>
+                </a>
+                <a href="https://www.xing.com/profile/{{ site.plainwhite.social_links.xing }}">
+                    <li><i class="icon-xing-squared"></i></li>
+                </a>
+            </ul>
+            <p>&copy; 2019</p>
+        </section>
+        <section class="content">
+            {{ content }}
+        </section>
+    </main>
+    {%- if site.plainwhite.analytics_id -%}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', '{{ site.plainwhite.analytics_id }}');
+    </script>
+    {%- endif -%}
 </body>
+
 </html>

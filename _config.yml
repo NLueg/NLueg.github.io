@@ -16,16 +16,18 @@ remote_theme: thelehhman/plainwhite-jekyll
 plainwhite:
   name: Nico Lueg
   tagline: > 
-        CS Student. 
+        CS Student. \n
         Developer.
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
+  disqus_shortname: Technology
   
   analytics_id: 'UA-146687582-1'
 
   # generate social links in footer
   social_links:
     github:  nlueg
+    xing: Nico_Lueg3
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
