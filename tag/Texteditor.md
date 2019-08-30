@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Category: Texteditor"
-tag: Texteditor
+title: "Category: texteditor"
+tag: texteditor
 robots: noindex
 ---

@@ -2,8 +2,9 @@
 layout: categories
 title: "Available Categories"
 categories: 
-    - openVALIDATION
+    - texteditor
     - IDE
+    - openVALIDATION
     - bachelor-thesis
-    - Texteditor 
+    
 ---

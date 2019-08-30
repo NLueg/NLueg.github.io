@@ -48,7 +48,37 @@ plainwhite:
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
+    
+scholar:
+  style: bibliography/elsevier-with-titles-alphabetical.csl
+  locale: en
 
+  sort_by: none
+  order: ascending
+
+  group_by: none
+  group_order: ascending
+
+  source: bibliography
+  bibliography: bibliography.bib
+  bibliography_template: "{{reference}}"
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+  bibtex_filters:
+  - superscript
+  - latex
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+  
+  bibliography_list_tag: ol
+ 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
@@ -56,5 +86,6 @@ plainwhite:
 
 
 plugins:
+  - jekyll-scholar
   - jekyll-seo-tag
 #  - jekyll-feed
