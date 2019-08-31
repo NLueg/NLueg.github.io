@@ -50,7 +50,6 @@ main {
     display: flex;
     height: 100%;
     @media screen and (min-width: $bigScreenW) {
-        margin: 0 auto;
         max-width: 1440px;
     }
     @media screen and (max-width: $mobileW) {
@@ -215,4 +214,14 @@ main {
 ol.bibliography {
     list-style: none;
     padding-left: 5px;
+}
+
+.logo-wrapper {
+    display: block;
+    width: 52px;
+    height: 25px;
+    background-image: url(../header-logo.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 104%;
 }

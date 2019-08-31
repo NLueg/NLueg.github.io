@@ -50,7 +50,7 @@ plainwhite:
     #   instance: example.com
     
 scholar:
-  style: bibliography/elsevier-with-titles-alphabetical.csl
+  style: bibliography/ieee.csl
   locale: en
 
   sort_by: none
@@ -67,9 +67,10 @@ scholar:
   join_strings:    true
 
   use_raw_bibtex_entry: false
+
   bibtex_filters:
-  - superscript
-  - latex
+    - latex
+    - markdown
 
   details_dir:    bibliography
   details_layout: bibtex.html
