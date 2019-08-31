@@ -179,10 +179,13 @@
   </macro>
   <macro name="urlaccess">
     <choose>
-      <if variable="URL">
+      <if variable="URL">          
           <text variable="URL"
+                prefix="[url](" 
+                suffix=")"/>
+          <!-- <text variable="URL"
                 prefix="&lt;a style='margin-right:20px' href=&#34;" 
-                suffix="&#34;&gt;[url]&lt;/a&gt;"/> 
+                suffix="&#34;&gt;[url]&lt;/a&gt;"/>  -->
       </if>
     </choose>
   </macro>
@@ -199,7 +202,7 @@
   <bibliography entry-spacing="0" second-field-align="flush">
     <layout suffix="">
       <!-- Citation Number -->
-      <text variable="citation-number" prefix="[" suffix="]"/>
+      <text variable="citation-number" prefix="[" suffix="] "/>
       <!-- Author(s) -->
       <text macro="author" suffix=", "/>
       <!-- Rest of Citation -->
