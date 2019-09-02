@@ -18,7 +18,7 @@ Currently code can be generated in the languages C#, Java, JavaScript and Node.j
 The language is quite new and will be published on GitHub soon {% cite openVALGithub %}
 
 The editor for the language should be web based and Open-Source for a strong extensibility and many possibilities for integrate it.
-Therefore we use the Language-Server Protocol {% cite lsp %} which tries to be an API between multiple language-extensions and text editors.
+Therefore we use the Language Server Protocol {% cite lsp %} which tries to be an API between multiple language-extensions and text editors.
 It's currently implemented for about 99 languages {% cite lspServers %} and 23 text editors {% cite lspTools %}.
 
 The main part of my thesis is the implementation of language-features for openVALIDATION.
@@ -35,9 +35,9 @@ For the autocompletion function the abstract-syntax-tree (AST) needs to be used 
 
 In the future post I want to answer the following questions:
 
-1. What is the language-server protocol?
+1. What is the Language Server Protocol?
 2. Which web based Open-Source editor is the most used and accepted one?
-3. How does Syntax-Highlighting work for a natural language?
+3. How does syntax-highlighting work for a natural language?
 4. Who can context sensitive code completion work for a natural language? 
 
 __References__
