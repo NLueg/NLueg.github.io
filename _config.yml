@@ -2,8 +2,8 @@ title: Nico Lueg | Homepage
 author: Nico Lueg
 email: nicolueg@gmx.de
 description: > # this means to ignore newlines until "show_exerpts:"
-  My name is Nico Lueg, I am a Computer Science student and Software Developer from Germany.
-  On this side I want to share my experiences that I made while developing.
+  My name is Nico Lueg, I am a Computer Science student and Software Developer from Germany. 
+  I want to share my experiences that I made while developing.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -11,7 +11,7 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
   
-url: https://NLueg.github.io
+url: https://nicolueg.com
 
 remote_theme: thelehhman/plainwhite-jekyll  
 
