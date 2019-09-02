@@ -12,6 +12,11 @@ layout: null
             <loc>{{ site.url }}</loc>
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>1.00</priority>
+        </url>        
+        <url>
+            <loc>{{ site.url }}</loc>
+            <lastmod>2019-06-07T00:00:00+00:00</lastmod>
+            <priority>1.00</priority>
         </url>
         {%- for post in site.posts -%}
             <url>

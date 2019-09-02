@@ -10,6 +10,7 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
   
+url: https://NLueg.github.io
 
 remote_theme: thelehhman/plainwhite-jekyll  
 
