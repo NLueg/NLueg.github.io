@@ -74,4 +74,4 @@ scholar:
 plugins:
   - jekyll-scholar
   - jekyll-seo-tag
-#  - jekyll-feed
+  - jekyll-feed

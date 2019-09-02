@@ -5,3 +5,4 @@ gemspec
 
 gem 'jekyll-scholar'
 gem 'jekyll-seo-tag'
+gem 'jekyll-feed'
