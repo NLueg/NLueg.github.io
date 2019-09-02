@@ -5,9 +5,9 @@ permalink: /about/
 ---
 
 My name is Nico Lueg and I'm 22 years old.
-I am studying computer science in my sixth semester. I am currently working on my bachelor's degree at the [Technical University in Dortmund](https://tu-dortmund.de/en/) and will finish the degree at the end of the year. Then I will start with my master's degree at the [FernUniversität in Hagen](https://www.fernuni-hagen.de/english/).
+I am studying computer science in my sixth semester. I am currently working on my bachelor's degree at the [Technical University in Dortmund](https://tu-dortmund.de/en/){:target="_blank"} and will finish the degree at the end of the year. Then I will start with my master's degree at the [FernUniversität in Hagen](https://www.fernuni-hagen.de/english/){:target="_blank"}.
 
-Since January 2016 I have also been working at the [BROCKHAUS AG](https://www.brockhaus-ag.de/) as a software developer alongside my university. 
+Since January 2016 I have also been working at the [BROCKHAUS AG](https://www.brockhaus-ag.de/){:target="_blank"} as a software developer alongside my university. 
 During this time I have already gained experience in various projects.
 
 At the present time I already worked with a few programming languages.
