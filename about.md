@@ -1,7 +1,9 @@
 ---
 layout: about
-title: "About Me"
+title: "About Me | Nico Lueg"
 permalink: /about/
+description: >
+    Here you can find a description of myself and what I am planning with this blog.
 ---
 
 My name is Nico Lueg and I'm 22 years old.

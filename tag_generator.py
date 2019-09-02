@@ -61,6 +61,6 @@ for tag in old_categories:
     os.remove(tag)
 
 f = open(filename, 'a')
-write_str = '---\nlayout: categories\ntitle: \"Available Categories\"\ncategories: ' + total_tags_string + '\n---\n'
+write_str = '---\nlayout: categories\ntitle: \"Available Categories\"\ncategories: ' + total_tags_string + '\ndescription: On this page you can find every tag that were used in different posts.\n---\n'
 f.write(write_str)
 f.close()
