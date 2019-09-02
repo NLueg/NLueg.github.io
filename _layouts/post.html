@@ -1,6 +1,13 @@
 ---
 layout: default-responsive-about
 ---
+
+<script>
+  //Linkifier for references
+  window.onload=function(){var a,e,r,t,l=$("ol.bibliography > li > span");if(l)for(var n=0;n<l.length;n++)l[n].innerHTML=(a=l[n].innerHTML,t=r=e=void 0,e=/(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim,r=/(^|[^\/])(www\.[\S]+(\b|$))/gim,t=/(([a-zA-Z0-9\-\_\.])+@[a-zA-Z\_]+?(\.[a-zA-Z]{2,6})+)/gim,a.replace(e,'<a href="$1" target="_blank">url</a>').replace(r,'$1<a href="http://$2" target="_blank">url</a>').replace(t,'<a href="mailto:$1">$1</a>'))};
+</script>
+
+
 {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
 <div class="post-container">
   <a class="post-link" href="{{ page.url | relative_url }}">
@@ -9,10 +16,10 @@ layout: default-responsive-about
   <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
   <div class="post-meta">
     <div class="post-categories">
-	  {% for tag in page.categories %}
-	  {% capture tag_name %}{{ tag }}{% endcapture %}
-		<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-	  {% endfor %}
+      {% for tag in page.categories %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+      {% endfor %}
     </div>
   </div>
   <div class="post">
