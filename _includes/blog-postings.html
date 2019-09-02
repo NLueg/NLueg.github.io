@@ -20,9 +20,7 @@
       </div>
     </div>
     <div class="post">
-      {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
-      {%- endif -%}
+      {{ post.description }}
     </div>
   </li>
   {%- endfor -%}
