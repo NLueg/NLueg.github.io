@@ -1,6 +1,6 @@
 ---
 layout: about
-title: "About Me | Nico Lueg"
+title: "About Me"
 permalink: /about/
 description: >
     Here you can find a description of myself and what I am planning with this blog.
