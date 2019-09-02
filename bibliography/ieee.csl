@@ -110,7 +110,7 @@
         <text variable="title" font-style="italic"/>
       </if>
       <else>
-        <text variable="title" quotes="true"/>
+        <text variable="title" quotes="false"/>
       </else>
     </choose>
   </macro>
@@ -179,13 +179,10 @@
   </macro>
   <macro name="urlaccess">
     <choose>
-      <if variable="URL">          
+      <if variable="URL">
           <text variable="URL"
-                prefix="[url](" 
-                suffix=")"/>
-          <!-- <text variable="URL"
-                prefix="&lt;a style='margin-right:20px' href=&#34;" 
-                suffix="&#34;&gt;[url]&lt;/a&gt;"/>  -->
+                prefix="" 
+                suffix=""/> 
       </if>
     </choose>
   </macro>
