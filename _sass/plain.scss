@@ -61,7 +61,7 @@ main {
         margin-top: 50px;
         flex-direction: column;
     }
-    .content { 
+    .content {
         @media screen and (min-width: $mobileW + 1) {
             max-width: calc(100% - #{$leftWidth});
             margin-left: $leftWidth;
@@ -181,10 +181,8 @@ ul.posts {
         padding: 0 !important;
         margin-top: 0;
     }
-
-    p > a {
+    p>a {
         color: $linkColor;
-
         &:hover {
             border-bottom: 0.5px solid $linkColor;
             color: #000;
@@ -232,4 +230,27 @@ ol.bibliography {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 101%;
+}
+
+ul.pager {
+    text-align: center;
+    list-style: none;
+    margin-right: 30px;
+    padding-left: 0px;
+    li {
+        display: inline;
+        padding: 10px;
+        margin: 5px;
+        background-color: #E3E3E3;
+        border-radius: 2px;
+
+        // margin-bottom: 5px;
+        // font-size: 14px;
+        // float: left;
+        // padding: 5px 20px;
+        // @media screen and (max-width: $mobileW) {
+        //     margin-top: 5px;
+        // }
+        // margin-right: 10px;
+    }
 }

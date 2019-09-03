@@ -13,7 +13,6 @@ main_uri: https://www.nicolueg.com
 sass:
   sass_dir: _sass
  
-
 remote_theme: thelehhman/plainwhite-jekyll  
 google_site_verification: FNaaXWwsnfU4VXhQ8kaUQXERO5Lv0k5cUQsd4LdK5UU
 
@@ -70,9 +69,18 @@ algolia:
   index_name:     my_blog
   search_only_api_key: 60be79fb752722f166d1c69a7b11932b
 
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page/:num/'
+  limit: 0
+  title: ':title - Page :num'
+  
+
 plugins:
   - jekyll-scholar
   - jekyll-seo-tag
   - jekyll-feed
   - jemoji # Smileys: https://github.com/jekyll/jemoji
   - jekyll-toc
+  - jekyll-paginate-v2

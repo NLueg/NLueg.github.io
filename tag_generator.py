@@ -77,6 +77,14 @@ for tag in old_categories:
     os.remove(tag)
 
 f = open(filename, 'a')
-write_str = '---\nlayout: categories\ntitle: \"Available Categories\"\ncategories: ' + total_tags_string + '\ndescription: On this page you can find every tag that were used in different posts.\npermalink: categories/\n---\n'
+
+layout = "layout: categories"
+titles = "title: \"Available Categories\""
+categories = "categories: " + total_tags_string
+description = "description: On this page you can find every tag that were used in different posts."
+permalink = "permalink: /categories/"
+pagination = "pagination:\n" + indent + "enabled: true" #\n" + indent "per_page: '5'"
+
+write_str = '---\n' + layout + '\n' + titles + '\n' + permalink + '\n' + categories + '\n' + description + '\n' + pagination + '\n---\n'
 f.write(write_str)
 f.close()
