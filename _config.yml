@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "show_exerpts:"
   I want to share my experiences that I made while developing.
 show_excerpts: true # set to true to show excerpts on the homepage
 
-main_uri: https://www.nicolueg.com
+url: https://www.nicolueg.com
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -76,6 +76,8 @@ pagination:
   limit: 0
   title: ':title - Page :num'
   
+extlinks:
+  attributes: {rel: noopener noreferrer, target: _blank}
 
 plugins:
   - jekyll-scholar
@@ -84,3 +86,4 @@ plugins:
   - jemoji # Smileys: https://github.com/jekyll/jemoji
   - jekyll-toc
   - jekyll-paginate-v2
+  - jekyll-extlinks

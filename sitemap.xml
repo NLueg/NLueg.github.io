@@ -9,33 +9,33 @@ layout: null
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
         <url>
-            <loc>{{ site.main_uri }}</loc>
+            <loc>{{ site.url }}</loc>
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>1.00</priority>
         </url>        
         <url>
-            <loc>{{ site.main_uri }}</loc>
+            <loc>{{ site.url }}</loc>
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>0.80</priority>
         </url>
         <url>
-            <loc>{{ site.main_uri }}/about/</loc>
+            <loc>{{ site.url }}/about/</loc>
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>0.80</priority>
         </url>        
         <url>
-            <loc>{{ site.main_uri }}/blog/</loc>
+            <loc>{{ site.url }}/blog/</loc>
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>0.80</priority>
         </url>        
         <url>
-            <loc>{{ site.main_uri }}/categories/</loc>
+            <loc>{{ site.url }}/categories/</loc>
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>0.80</priority>
         </url>
         {%- for post in site.posts -%}
             <url>
-                <loc>{{ site.main_uri }}{{ post.url }}</loc>
+                <loc>{{ site.url }}{{ post.url }}</loc>
                 <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
                 <changefreq>weekly</changefreq>
                 <priority>0.80</priority>

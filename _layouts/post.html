@@ -22,7 +22,7 @@ layout: default-responsive-about
     </div>
   </div>
   <div class="post">
-    {{ content }}
+    {{ content | extlinks }}
   </div>    
   {%- if site.plainwhite.disqus_shortname -%}
     <script>
