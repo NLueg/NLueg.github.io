@@ -23,7 +23,7 @@ plainwhite:
         Developer.
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
-  disqus_shortname: Technology
+  disqus_shortname: nicolueg
   
   analytics_id: 'UA-146687582-1'
 
