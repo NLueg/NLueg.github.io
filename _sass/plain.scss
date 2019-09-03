@@ -133,7 +133,7 @@ main {
         margin-bottom: 5px;
         font-size: 14px;
         float: left;
-        background-color: #E3E3E3;
+        background-color: $base01;
         padding: 5px 20px;
         border-radius: 2px;
         @media screen and (max-width: $mobileW) {
@@ -241,7 +241,7 @@ ul.pager {
         display: inline;
         padding: 10px;
         margin: 5px;
-        background-color: #E3E3E3;
+        background-color: $base01;
         border-radius: 2px;
 
         // margin-bottom: 5px;
