@@ -8,11 +8,13 @@ layout: default-responsive-about
   </a>
   <p>On the following you can find the tags or categories, that were used in some posts.</p>
   <div class="post-meta">
-    <div class="post-categories">
-	  {% for tag in page.categories %}
-	  {% capture tag_name %}{{ tag }}{% endcapture %}
-		<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-	  {% endfor %}
+    <div class="post-categories">	  
+        {% for tag in page.categories %}
+        {% assign splitted_tag = tag | split: "," %}
+          <a href="/tag/{{ splitted_tag[0] }}"><code class="highligher-rouge"><nobr>{{ splitted_tag[0] }}: {{ splitted_tag[1]}}</nobr></code>&nbsp;</a>
+        {% endfor %}
     </div>
   </div>
 </div>
+
+{%- include blog-postings.html -%}

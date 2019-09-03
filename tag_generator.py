@@ -10,13 +10,14 @@ No plugins required.
 
 import glob
 import os
+import collections
 
 post_dir = '_posts/'
 tag_dir = 'tag/'
 
 filenames = glob.glob(post_dir + '*md')
 
-total_tags = []
+tags_dict = {}
 for filename in filenames:
     f = open(filename, 'r', encoding='utf8')
     crawl = False
@@ -24,7 +25,13 @@ for filename in filenames:
         if crawl:
             current_tags = line.strip().split()
             if current_tags[0] == 'categories:':
-                total_tags.extend(current_tags[1:])
+                tmp_tags = current_tags[1:]
+
+                for item in tmp_tags:
+                    if item in tags_dict:
+                        tags_dict[item] += 1
+                    else:
+                        tags_dict[item] = 1
                 crawl = False
                 break
         if line.strip() == '---':
@@ -34,7 +41,7 @@ for filename in filenames:
                 crawl = False
                 break
     f.close()
-total_tags = set(total_tags)
+total_tags = set(tags_dict)
 
 old_tags = glob.glob(tag_dir + '*.md')
 for tag in old_tags:
@@ -52,11 +59,16 @@ for tag in total_tags:
     f.close()
 print("Tags generated, count", total_tags.__len__())
 
-sorted_tags = sorted(total_tags, key=lambda s: s.lower())
 total_tags_string = "\n    "
+tags_dict_ordered = sorted(tags_dict.items(), key=lambda x: x[0].lower())
 
-for tag in sorted_tags:
-    total_tags_string += "- " + tag + "\n    "
+for i, j in sorted(tags_dict.items(), key=lambda x: x[0].lower()): 
+    print(i, j)
+
+indent = "    "
+
+for tag, count in tags_dict_ordered:
+    total_tags_string += "- " + tag + "," + str(count) + "\n" + indent
 
 
 filename = "categories.md"
