@@ -1,11 +1,45 @@
 /* ==========================================================================
    SEARCH
    ========================================================================== */
+
 .search-searchbar {
-    width: 300px;
+    width: 320px;
 }
 
+.search-hits {
+    border-top: solid 2px #b0bcc5;
+    border-bottom: solid 2px #b0bcc5;
+}
+
+.ais-hits {
+    margin-top: 14px;
+    margin-left: 12px;
+}
+
+@media(min-width: $lg-up) {
+    .search-hits {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 80px;
+        z-index: 1000;
+    }
+}
+
+@media(max-width: $lg-up) {
+    .search-hits {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .search-searchbar {
+        width: 100%;
+    }
+}
+
+
 /* Algolia search */
+
 .ais-search-box--input {
     font-family: $sans-serif-font;
     font-size: ms(0);
