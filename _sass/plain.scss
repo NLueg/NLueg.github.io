@@ -1,6 +1,10 @@
+@import 'variables';
 @import 'ext/fonts';
 @import 'ext/normalize';
 @import 'syntax';
+@import "vendor/instantsearch/instantsearch";
+@import "vendor/instantsearch/instantsearch-theme-algolia";
+@import 'search';
 $linkColor: #4c6aff;
 $mobileW: 768px;
 $smallMobileW: 480px;

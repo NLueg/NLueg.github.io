@@ -3,6 +3,11 @@
 source "https://rubygems.org"
 gemspec
 
-gem 'jekyll-scholar'
-gem 'jekyll-seo-tag'
-gem 'jekyll-feed'
+group :jekyll_plugins do
+    gem 'jekyll-algolia', '~> 1.0'
+    gem 'jekyll-scholar'
+    gem 'jekyll-seo-tag'
+    gem 'jekyll-feed'
+    gem 'jemoji'
+    gem 'jekyll-toc'
+end

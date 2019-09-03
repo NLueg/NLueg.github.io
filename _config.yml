@@ -65,13 +65,14 @@ scholar:
   bibliography_list_tag: ol
   parse_block_html: true
  
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-
+algolia:
+  application_id: 1TW92TYN2U
+  index_name:     my_blog
+  search_only_api_key: 60be79fb752722f166d1c69a7b11932b
 
 plugins:
   - jekyll-scholar
   - jekyll-seo-tag
   - jekyll-feed
+  - jemoji # Smileys: https://github.com/jekyll/jemoji
+  - jekyll-toc

@@ -4,3 +4,4 @@
 _site
 Gemfile.lock
 .DS_Store
+_algolia_api_key

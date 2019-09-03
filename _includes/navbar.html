@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
     <a class="navbar-brand" href="/"><span class="logo-wrapper"></span></a>
 
     <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
@@ -6,12 +6,39 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-        <ul class="navbar-nav">
+        <ul class="nav navbar-nav">
             {% assign links = site.data.navigation %} {% for link in links %}
             <li class="nav-item active">
                 <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
             </li>
             {% endfor %}
         </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            {% include search-form.html %}
+        </ul>
+    </div>
+
+
+    </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/"><span class="logo-wrapper"></span></a>
+
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            {% assign links = site.data.navigation %} {% for link in links %}
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            {% include search-form.html %}
+        </form>
     </div>
 </nav>
