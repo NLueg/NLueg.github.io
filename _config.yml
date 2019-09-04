@@ -79,6 +79,9 @@ pagination:
 extlinks:
   attributes: {rel: noopener noreferrer, target: _blank}
 
+feed:
+  title: Homepage RSS | Nico Lueg
+
 plugins:
   - jekyll-scholar
   - jekyll-seo-tag

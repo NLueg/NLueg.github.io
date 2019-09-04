@@ -3,7 +3,8 @@ layout: post
 title:  Short overview of the topic of my bachelor-thesis
 description: >
     In my very first post I want explain the topic of my bachelor-thesis.
-    This is just a short overview, where I explain the used technologies and talk about the future topics.
+    My thesis is about the implementation of an text-editor for the DSL openVALIDATION.
+    In this post I want to give a short overview and talk about future topics.
 date:   2019-09-02 10:03:36 +0630
 categories: bachelor-thesis IDE text-editor openVALIDATION
 ---
