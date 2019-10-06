@@ -12,10 +12,10 @@ I am studying computer science in my sixth semester. I am currently working on m
 Since January 2016 I have also been working at the [BROCKHAUS AG](https://www.brockhaus-ag.de/) as a software developer alongside my university. 
 During this time I have already gained experience in various projects.
 
-At the present time I already worked with a few programming languages.
+At present, I already worked with a few programming languages.
 I used Java, TypeScript and C# most of the time.
-But I want to explore new languages, so that I can fix problems even better.
+But I want to explore new languages so that I can solve problems even better.
 
-On this blog I want to share a few thoughts of myself and experiences that I made.
+On this blog, I want to share a few thoughts of myself and the experiences that I made.
 I want to concentrate the postings on programming languages and technology in general. 
 I aim to post a new entry every one or two weeks.
