@@ -39,7 +39,7 @@ In the future post I want to answer the following questions:
 1. What is the Language Server Protocol?
 2. Which web-based Open-Source editor is the most used and accepted one?
 3. How does syntax-highlighting work for a natural language?
-4. Who can context-sensitive code completion work for a natural language? 
+4. How can context-sensitive code completion work for a natural language? 
 
 __References__
 {% bibliography --cited %}

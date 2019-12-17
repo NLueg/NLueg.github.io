@@ -18,4 +18,4 @@ But I want to explore new languages so that I can solve problems even better.
 
 On this blog, I want to share a few thoughts of myself and the experiences that I made.
 I want to concentrate the postings on programming languages and technology in general. 
-I aim to post a new entry every one or two weeks.
+I aim to post a new entry like once a month.

@@ -4,7 +4,7 @@
     <h1 id="posts-label">Recent Posts</h1>
   </li>
 
-  {%- for post in paginator.posts -%}
+  {%- for post in paginator.posts reversed -%}
   <li>
     {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
     <a class="post-link" href="{{ post.url | relative_url }}">
