@@ -66,6 +66,10 @@ main {
             max-width: calc(100% - #{$leftWidth});
             margin-left: $leftWidth;
         }
+
+        &.content-no-about {
+            margin: 0 auto;
+        }
     }
     .about,
     .about-responsive {
