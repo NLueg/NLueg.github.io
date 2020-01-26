@@ -72,7 +72,7 @@ This is also different from the other to packages where the JRE gets downloaded 
 Now you don't have to publish the JRE in your own package.
 
 Also I export a function that can be used to run the JAR.
-The function itself then handels the finding of the JRE and can take some arguments too.
+The function itself then handles the finding of the JRE and can take some arguments too.
 
 I already used the package in two projects in the context of openVALIDATION: `openvalidation-npm-cli` {% cite openvalidationNpm %} and `openvalidation-languageserver-backend` {% cite openvalidationBackend %}.
 
