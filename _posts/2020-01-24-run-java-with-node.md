@@ -81,5 +81,3 @@ Did you already struggled with a problem like this? And what was your solution?
 
 __References__
 {% bibliography --cited %}
-
-
