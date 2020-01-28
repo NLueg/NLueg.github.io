@@ -7,7 +7,7 @@
 @import 'search';
 $linkColor: #4c6aff;
 $mobileW: 768px;
-$smallMobileW: 480px;
+$smallMobileW: 500px;
 $bigScreenW: 1600px;
 $leftWidth: 320px;
 *,
@@ -270,4 +270,24 @@ div.highlight {
 pre.highlight {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+}
+
+pre.highlight, code {
+	font-family: 'Consolas', Menlo, monospace;
+	line-height: 1.4em;
+	tab-size: 4;
+}
+
+.highlight {
+	background-color: #f4f4f4;
+}
+
+div.highlight {
+	padding: 5px 20px;
+}
+
+@media (max-width: $smallMobileW) {
+    div.highlight {
+        max-width: 290px;
+    }
 }
