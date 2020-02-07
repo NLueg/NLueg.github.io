@@ -2,7 +2,7 @@ title: Homepage | Nico Lueg
 author: Nico Lueg
 email: nicolueg@gmx.de
 description: > # this means to ignore newlines until "show_exerpts:"
-  My name is Nico Lueg, I am a Computer Science student and Software Developer from Germany. 
+  My name is Nico Lueg, I am an IT-Consultant and programming enthusiast from Germany. 
   I want to share my experiences that I made while developing.
 show_excerpts: true # set to true to show excerpts on the homepage
 
@@ -19,8 +19,7 @@ google_site_verification: FNaaXWwsnfU4VXhQ8kaUQXERO5Lv0k5cUQsd4LdK5UU
 plainwhite:
   name: Nico Lueg
   tagline: > 
-        CS Student. \n
-        Developer.
+        IT-Consultant.
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   disqus_shortname: nicolueg
