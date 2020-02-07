@@ -12,4 +12,5 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-extlinks'
+    gem 'jekyll-postfiles'
 end
