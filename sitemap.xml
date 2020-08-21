@@ -27,7 +27,13 @@ layout: null
             <loc>{{ site.url }}/categories/</loc>
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>0.80</priority>
-        </url>
+        </url>  
+        <url>
+            <loc>{{ site.url }}/pantrist/</loc>
+            <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+            <priority>0.80</priority>
+        </url>   
+
         {%- for post in site.posts -%}
             <url>
                 <loc>{{ site.url }}{{ post.url }}</loc>
