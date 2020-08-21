@@ -12,6 +12,8 @@ Are you also tired of constantly forgetting something while shopping or using up
 
 Then **Pantrist** is the answer!
 
+_Pantrist is not released yet but we are close to release it! (21-08-2020)_
+
 <a class="google-badge" href='https://play.google.com/store/apps/details?id=com.nicolueg.pantrist&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
 With Pantrist you never lose track of your supplies and your purchases.
