@@ -4,7 +4,25 @@ layout: default-no-about
 
 <script>
   //Linkifier for references
-  window.onload=function(){var a,e,r,t,l=$("ol.bibliography > li > span");if(l)for(var n=0;n<l.length;n++)l[n].innerHTML=(a=l[n].innerHTML,t=r=e=void 0,e=/(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim,r=/(^|[^\/])(www\.[\S]+(\b|$))/gim,t=/(([a-zA-Z0-9\-\_\.])+@[a-zA-Z\_]+?(\.[a-zA-Z]{2,6})+)/gim,a.replace(e,'<a href="$1" target="_blank">url</a>').replace(r,'$1<a href="http://$2" target="_blank">url</a>').replace(t,'<a href="mailto:$1">$1</a>'))};
+  window.onload = function () {
+    var a,
+      e,
+      r,
+      t,
+      l = $("ol.bibliography > li > span");
+    if (l)
+      for (var n = 0; n < l.length; n++)
+        l[n].innerHTML =
+          ((a = l[n].innerHTML),
+          (t = r = e = void 0),
+          (e = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim),
+          (r = /(^|[^\/])(www\.[\S]+(\b|$))/gim),
+          (t = /(([a-zA-Z0-9\-\_\.])+@[a-zA-Z\_]+?(\.[a-zA-Z]{2,6})+)/gim),
+          a
+            .replace(e, '<a href="$1" target="_blank">url</a>')
+            .replace(r, '$1<a href="http://$2" target="_blank">url</a>')
+            .replace(t, '<a href="mailto:$1">$1</a>'));
+  };
 </script>
 
 {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
@@ -12,34 +30,45 @@ layout: default-no-about
   <a class="post-link" href="{{ page.url | relative_url }}">
     <h2 class="post-title">{{ page.title | escape }}</h2>
   </a>
-  <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }} &bull; {% include reading-time.html %}</div>
+  <div class="post-date">
+    <i class="icon-calendar"></i>{{ page.date | date: date_format }} &bull; {%
+    include reading-time.html %}
+  </div>
   <div class="post-meta">
     <div class="post-categories">
-      {% for tag in page.categories %}
-      {% capture tag_name %}{{ tag }}{% endcapture %}
-      <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+      {% for tag in page.categories %} {% capture tag_name %}{{ tag }}{%
+      endcapture %}
+      <a href="/tag/{{ tag_name }}"
+        ><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code
+        >&nbsp;</a
+      >
       {% endfor %}
     </div>
   </div>
   <div class="post">
     {{ content | extlinks }}
-  </div>    
+  </div>
   {%- if site.plainwhite.disqus_shortname -%}
-    <script>
-        if (window.cookieAccecpted) {
-            document.write('<div id="disqus_thread" style="margin-top:25px"><\/div>');
+  <script>
+    if (window.cookieAccecpted) {
+      document.write('<div id="disqus_thread" style="margin-top:25px"><\/div>');
 
-            var disqus_config = function () {
-              this.page.url = '{{ page.url | absolute_url }}';
-              this.page.identifier = '{{ page.url | absolute_url }}';
-            };
-            (function () {
-              var d = document, s = d.createElement('script');
-              s.src = 'https://{{ site.plainwhite.disqus_shortname }}.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-            })();
-            document.write('<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.<\/a><\/noscript>');
-        }
-    </script>     
+      var disqus_config = function () {
+        this.page.url = "{{ page.url | absolute_url }}";
+        this.page.identifier = "{{ page.url | absolute_url }}";
+      };
+      (function () {
+        var d = document,
+          s = d.createElement("script");
+        s.src =
+          "https://{{ site.plainwhite.disqus_shortname }}.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      document.write(
+        '<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.<\/a><\/noscript>'
+      );
+    }
+  </script>
   {%- endif -%}
+</div>
