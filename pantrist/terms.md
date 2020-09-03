@@ -1,9 +1,8 @@
 ---
 layout: default-no-about
 title: "Terms of Use"
-permalink: /termsOfUse/
 description: >
-Here you can find the terms of use of my app Pantrist
+  Here you can find the terms of use of my app Pantrist
 ---
 
 **Terms & Conditions**

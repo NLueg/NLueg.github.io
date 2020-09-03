@@ -51,4 +51,4 @@ For general feedback or function requests, please contact pantrist.question@gmai
 ### Terms and conditions
 
 - **[Privacy Policy](/pantrist/privacy)**
-- **[Terms Of Use](/pantrist/termsOfUse)**
+- **[Terms Of Use](/pantrist/terms)**
