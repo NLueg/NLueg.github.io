@@ -14,6 +14,9 @@ Then **Pantrist** is the answer!
 
 <a class="google-badge" href='https://play.google.com/store/apps/details?id=com.nicolueg.pantrist&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
+<a class="huawei-badge" href='https://appgallery.cloud.huawei.com/ag/n/app/C102854333?channelId=Pantrist&id=c0c812631173468a81bc60b4fb066f7a&s=3BC70D6199A8E3E63A2528C219CEEC86A3B38ADD33315F8B8E6DA9D19B0AD09D&detailType=0&v='>![Explore it on AppGallery](/assets/ExploreOnAppGallery.png)
+</a>
+
 With Pantrist you never lose track of your supplies and your purchases.
 
 Even before you go shopping, you can clearly categorize the products to enable efficient purchasing.
