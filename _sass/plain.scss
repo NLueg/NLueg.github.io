@@ -303,6 +303,16 @@ div.highlight {
   }
 }
 
+.apple-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 172px;
+  }
+}
+
 .huawei-badge {
   display: flex;
   flex-direction: column;
