@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name = "seobility" content = "e59159d2781145a4a5dcd36ae7c22882">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+<link rel="apple-touch-icon" href="/assets/favicon.ico" />
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<title>Terms of Use | Nico Lueg</title>
+
+ 
+
+
+
+
+ 
+<!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Terms of Use - Homepage | Nico Lueg</title>
+<meta property="og:title" content="Terms of Use" />
+<meta name="description" content="Here you can find the terms of use of my app Pantrist" />
+<meta property="og:description" content="Here you can find the terms of use of my app Pantrist" />
+<link rel="canonical" href="https://www.nicolueg.com/pantrist/terms.html" />
+<meta property="og:url" content="https://www.nicolueg.com/pantrist/terms.html" />
+<meta property="og:site_name" content="Homepage | Nico Lueg" />
+<meta name="google-site-verification" content="FNaaXWwsnfU4VXhQ8kaUQXERO5Lv0k5cUQsd4LdK5UU" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "Terms of Use",
+"description": "Here you can find the terms of use of my app Pantrist",
+"url": "https://www.nicolueg.com/pantrist/terms.html"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+<style>
+    #cookie-notice {
+        padding: 7px 15px;
+        display: none;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #222;
+        color: rgba(255, 255, 255, 0.8);
+        z-index: 10000;
+    }
+    
+    #cookie-text {
+        margin-bottom: 5px;
+    }
+
+    #cookie-text>div>a {
+        color: #7c98ff;
+    }
+    
+    #cookie-notice>a {
+        cursor: pointer;
+        margin-left: 10px;
+        background-color: #e3e3e3;
+        border-color: #e3e3e3;
+        color: #222;
+    }
+    
+    @media (max-width: 767px) {
+        #cookie-text>div {
+            display: block;
+            padding-top: 3px;
+            margin-bottom: 13px;
+        }
+        #cookie-notice>a {
+            position: relative;
+            bottom: 4px;
+        }
+    }
+</style>
+<div id="cookie-notice">
+    <div id="cookie-text">
+        <div>I use third party scripts to improve the functionality of this website. These scripts use some cookies.
+        Namely I first use the Cloudflare-Protection which requires a <a href="https://support.cloudflare.com/hc/en-us/articles/200170156-What-does-the-Cloudflare-cfduid-cookie-do-">cookie</a> that can't be disabled.
+        Also I use Google-Analytics as an indicator for how often the side is visited which also requires a few <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">cookies</a>.
+        Last but not least I use Disqus as a commenting-framework which requires additional <a href="https://help.disqus.com/en/articles/1717155-use-of-cookies">cookies</a>.
+        Most of the Google-Analytics-Cookies and all the Disqus-Cookies can be disabled by clicking the "Decline"-Button. </div>
+    </div>
+    <a id="cookie-notice-decline" class="btn btn-primary btn-sm">Decline</a>
+    <a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
+</div>
+<script>
+    var cookieAccecpted = false;
+
+    function createCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {
+        createCookie(name, "", -1);
+    }
+
+    if (readCookie('cookie-notice-dismissed') == 'true') {
+        cookieAccecpted = true;
+    } else {
+        cookieAccecpted = false;
+        $('#cookie-notice').show();
+    }
+    $('#cookie-notice-accept').click(function() {
+        createCookie('cookie-notice-dismissed', 'true', 31);
+        $('#cookie-notice').hide();
+        location.reload();
+    });
+    $('#cookie-notice-decline').click(function() {
+        $('#cookie-notice').hide();
+    });
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link type="application/atom+xml" rel="alternate" href="https://www.nicolueg.com/feed.xml" title="Homepage | Nico Lueg" /><script>
+        if (window.cookieAccecpted) {
+            document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146687582-1"><\/script>');
+
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-146687582-1');
+        }
+    </script></head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/"><span class="logo-wrapper"></span></a>
+
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+             
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.nicolueg.com/about">About Me</a>
+            </li>
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.nicolueg.com/blog">Blog</a>
+            </li>
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.nicolueg.com/categories">Categories</a>
+            </li>
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.nicolueg.com/pantrist">Pantrist</a>
+            </li>
+            
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <div tabindex="-1" class="search-searchbar"></div>
+<div class="search-hits bg-light"></div>
+        </form>
+    </div>
+</nav>
+<main class="container">
+    <section class="content content-no-about">
+        <p><strong>Terms &amp; Conditions</strong></p>
+
+<p>By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app.</p>
+
+<p>Pantrist is provided to the user free of charge. Individual functions must be subscribed to for a fee. In order to use all functions, registration as a user with a user account may be required, stating user name and valid e-mail address, as well as an Internet connection.</p>
+
+<p>You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Nico Lueg.</p>
+
+<p>Nico Lueg is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.</p>
+
+<p>The Pantrist app stores and processes personal data that you have provided to us, in order to provide my Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Pantrist app won’t work properly or at all.</p>
+
+<p>The app does use third party services that declare their own Terms and Conditions.</p>
+
+<p>Link to Terms and Conditions of third party service providers used by the app</p>
+
+<ul>
+  <li><a href="https://policies.google.com/terms" rel="noopener noreferrer" target="_blank">Google Play Services</a></li>
+  <li><a href="https://developers.google.com/admob/terms" rel="noopener noreferrer" target="_blank">AdMob</a></li>
+  <li><a href="https://firebase.google.com/terms/analytics" rel="noopener noreferrer" target="_blank">Google Analytics for Firebase</a></li>
+  <li><a href="https://firebase.google.com/terms/crashlytics" rel="noopener noreferrer" target="_blank">Firebase Crashlytics</a></li>
+  <li><a href="https://www.facebook.com/legal/terms/plain_text_terms" rel="noopener noreferrer" target="_blank">Facebook</a></li>
+</ul>
+
+<p>You should be aware that there are certain things that Nico Lueg will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Nico Lueg cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.</p>
+
+<p>If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.</p>
+
+<p>Along the same lines, Nico Lueg cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Nico Lueg cannot accept responsibility.</p>
+
+<p>With respect to Nico Lueg’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Nico Lueg accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.</p>
+
+<p>At some point, we may wish to update the app. The app is currently available on – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Nico Lueg does not promise that it will always update the app so that it is relevant to you and/or works with the version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.</p>
+
+<p><strong>Changes to This Terms and Conditions</strong></p>
+
+<p>I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.</p>
+
+<p>These terms and conditions are effective as of 2020-08-20</p>
+
+<p><strong>Contact Us</strong></p>
+
+<p>If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at <a href="mailto:pantrist.question@gmail.com">pantrist.question@gmail.com</a>.</p>
+
+    </section>
+</main><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+
+<script>
+    "use strict";
+    // Instanciating InstantSearch.js with Algolia credentials
+    var search = instantsearch({
+        appId: "1TW92TYN2U",
+        apiKey: "60be79fb752722f166d1c69a7b11932b",
+        indexName: "my_blog",
+        searchParameters: {
+            restrictSearchableAttributes: ["title", "content"]
+        },
+        searchFunction: function searchFunction(helper) {
+            var searchResults = document.querySelector(".search-hits");
+            if (helper.state.query === "") {
+                searchResults.style.display = "none";
+                return;
+            }
+            helper.search();
+            searchResults.style.display = "block";
+        }
+    });
+    var hitTemplate = function hitTemplate(hit) {
+        var url = hit.url;
+        var title = hit._highlightResult.title.value;
+        var content = hit._highlightResult.html.value;
+        return (
+            '<article class="entry"><h3 class="entry__title"><a href="' +
+            url +
+            '">' +
+            title +
+            '</a></h3><div class="entry__excerpt">' +
+            content +
+            "</div></article>"
+        );
+    };
+    // Adding searchbar and results widgets
+    search.addWidget(
+        instantsearch.widgets.searchBox({
+            container: ".search-searchbar",
+            poweredBy: true,
+            placeholder: "Search...",
+            reset: true
+        })
+    );
+    search.addWidget(
+        instantsearch.widgets.hits({
+            container: ".search-hits",
+            templates: {
+                empty: "<p>No results</p>",
+                item: hitTemplate
+            }
+        })
+    );
+
+    $(".ais-search-box--reset-wrapper").on('click', function() {
+        alert("hallo");
+    });
+
+    // Starting the search
+    search.start();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name = "seobility" content = "e59159d2781145a4a5dcd36ae7c22882">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+<link rel="apple-touch-icon" href="/assets/favicon.ico" />
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<title>About Me | Nico Lueg</title>
+
+ 
+
+
+
+
+ 
+<!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>About Me - Homepage | Nico Lueg</title>
+<meta property="og:title" content="About Me" />
+<meta name="description" content="Here you can find a description of myself and what I am planning with this blog." />
+<meta property="og:description" content="Here you can find a description of myself and what I am planning with this blog." />
+<link rel="canonical" href="https://www.nicolueg.com/about/" />
+<meta property="og:url" content="https://www.nicolueg.com/about/" />
+<meta property="og:site_name" content="Homepage | Nico Lueg" />
+<meta name="google-site-verification" content="FNaaXWwsnfU4VXhQ8kaUQXERO5Lv0k5cUQsd4LdK5UU" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebSite",
+"name": "Homepage | Nico Lueg",
+"headline": "About Me",
+"description": "Here you can find a description of myself and what I am planning with this blog.",
+"url": "https://www.nicolueg.com/about/"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+<style>
+    #cookie-notice {
+        padding: 7px 15px;
+        display: none;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #222;
+        color: rgba(255, 255, 255, 0.8);
+        z-index: 10000;
+    }
+    
+    #cookie-text {
+        margin-bottom: 5px;
+    }
+
+    #cookie-text>div>a {
+        color: #7c98ff;
+    }
+    
+    #cookie-notice>a {
+        cursor: pointer;
+        margin-left: 10px;
+        background-color: #e3e3e3;
+        border-color: #e3e3e3;
+        color: #222;
+    }
+    
+    @media (max-width: 767px) {
+        #cookie-text>div {
+            display: block;
+            padding-top: 3px;
+            margin-bottom: 13px;
+        }
+        #cookie-notice>a {
+            position: relative;
+            bottom: 4px;
+        }
+    }
+</style>
+<div id="cookie-notice">
+    <div id="cookie-text">
+        <div>I use third party scripts to improve the functionality of this website. These scripts use some cookies.
+        Namely I first use the Cloudflare-Protection which requires a <a href="https://support.cloudflare.com/hc/en-us/articles/200170156-What-does-the-Cloudflare-cfduid-cookie-do-">cookie</a> that can't be disabled.
+        Also I use Google-Analytics as an indicator for how often the side is visited which also requires a few <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">cookies</a>.
+        Last but not least I use Disqus as a commenting-framework which requires additional <a href="https://help.disqus.com/en/articles/1717155-use-of-cookies">cookies</a>.
+        Most of the Google-Analytics-Cookies and all the Disqus-Cookies can be disabled by clicking the "Decline"-Button. </div>
+    </div>
+    <a id="cookie-notice-decline" class="btn btn-primary btn-sm">Decline</a>
+    <a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
+</div>
+<script>
+    var cookieAccecpted = false;
+
+    function createCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {
+        createCookie(name, "", -1);
+    }
+
+    if (readCookie('cookie-notice-dismissed') == 'true') {
+        cookieAccecpted = true;
+    } else {
+        cookieAccecpted = false;
+        $('#cookie-notice').show();
+    }
+    $('#cookie-notice-accept').click(function() {
+        createCookie('cookie-notice-dismissed', 'true', 31);
+        $('#cookie-notice').hide();
+        location.reload();
+    });
+    $('#cookie-notice-decline').click(function() {
+        $('#cookie-notice').hide();
+    });
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link type="application/atom+xml" rel="alternate" href="https://www.nicolueg.com/feed.xml" title="Homepage | Nico Lueg" /><script>
+        if (window.cookieAccecpted) {
+            document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146687582-1"><\/script>');
+
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-146687582-1');
+        }
+    </script></head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/"><span class="logo-wrapper"></span></a>
+
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+             
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.nicolueg.com/about">About Me</a>
+            </li>
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.nicolueg.com/blog">Blog</a>
+            </li>
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.nicolueg.com/categories">Categories</a>
+            </li>
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.nicolueg.com/pantrist">Pantrist</a>
+            </li>
+            
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <div tabindex="-1" class="search-searchbar"></div>
+<div class="search-hits bg-light"></div>
+        </form>
+    </div>
+</nav>
+<main class="container">
+    <section class="about">
+        <img src="/assets/portfolio.png" alt="Nico Lueg">
+        <h2><a href="/about">Nico Lueg</a></h2>
+        <div class="tagline">
+            <div>Computer Science Student.</div>
+            </br>
+            <div>Developer.</div>
+        </div>
+        <ul class="social">
+            <a href="https://github.com/nlueg">
+                <li><i class="icon-github-circled"></i></li>
+            </a>
+            <a href="https://www.xing.com/profile/Nico_Lueg3">
+                <li><i class="icon-xing-squared"></i></li>
+            </a>
+        </ul>
+        <p>&copy; 2019</p>
+    </section>
+    <section class="content">
+        <div class="post-container">
+  <a class="post-link" href="/about/">
+    <h2 class="post-title">About Me</h2>
+  </a>
+
+  <div class="post">
+    <p>My name is Nico Lueg and I’m 22 years old.
+I recently finished my bachelor’s degree at the <a href="https://tu-dortmund.de/en/" rel="noopener noreferrer" target="_blank">Technical University in Dortmund</a> in December 2019.
+Soon, I will start with my master’s degree at the <a href="https://www.fernuni-hagen.de/english/" rel="noopener noreferrer" target="_blank">FernUniversität in Hagen</a>.</p>
+
+<p>Since January 2016 I have also been working at the <a href="https://www.brockhaus-ag.de/" rel="noopener noreferrer" target="_blank">BROCKHAUS AG</a> as a software developer alongside my university.
+During this time I have already gained experience in various projects.
+After my bachelor’s degree, I started to work there as an IT-Consultant.</p>
+
+<p>At present, I already worked with a few programming languages.
+I used Java, TypeScript, and C# most of the time.
+But I want to explore new languages so that I can solve problems even better.</p>
+
+<p>On this blog, I want to share a few thoughts of myself and the experiences that I made.
+I want to concentrate the postings on programming languages and technology in general.
+I aim to post a new entry like once a month.</p>
+
+  </div>
+</div>
+
+    </section>
+</main><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+
+<script>
+    "use strict";
+    // Instanciating InstantSearch.js with Algolia credentials
+    var search = instantsearch({
+        appId: "1TW92TYN2U",
+        apiKey: "60be79fb752722f166d1c69a7b11932b",
+        indexName: "my_blog",
+        searchParameters: {
+            restrictSearchableAttributes: ["title", "content"]
+        },
+        searchFunction: function searchFunction(helper) {
+            var searchResults = document.querySelector(".search-hits");
+            if (helper.state.query === "") {
+                searchResults.style.display = "none";
+                return;
+            }
+            helper.search();
+            searchResults.style.display = "block";
+        }
+    });
+    var hitTemplate = function hitTemplate(hit) {
+        var url = hit.url;
+        var title = hit._highlightResult.title.value;
+        var content = hit._highlightResult.html.value;
+        return (
+            '<article class="entry"><h3 class="entry__title"><a href="' +
+            url +
+            '">' +
+            title +
+            '</a></h3><div class="entry__excerpt">' +
+            content +
+            "</div></article>"
+        );
+    };
+    // Adding searchbar and results widgets
+    search.addWidget(
+        instantsearch.widgets.searchBox({
+            container: ".search-searchbar",
+            poweredBy: true,
+            placeholder: "Search...",
+            reset: true
+        })
+    );
+    search.addWidget(
+        instantsearch.widgets.hits({
+            container: ".search-hits",
+            templates: {
+                empty: "<p>No results</p>",
+                item: hitTemplate
+            }
+        })
+    );
+
+    $(".ais-search-box--reset-wrapper").on('click', function() {
+        alert("hallo");
+    });
+
+    // Starting the search
+    search.start();
+</script>
+</body>
+
+</html>
