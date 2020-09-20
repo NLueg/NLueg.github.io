@@ -12,7 +12,7 @@ Are you also tired of constantly forgetting something while shopping or using up
 
 Then **Pantrist** is the answer!
 
-<a class="apple-badge" href='https://play.google.com/store/apps/details?id=com.nicolueg.pantrist&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>![Download on the App Store](/assets/AppleBadge.svg)</a>
+<a class="apple-badge" href='https://apps.apple.com/app/id1531156635'>![Download on the App Store](/assets/AppleBadge.svg)</a>
 
 <a class="google-badge" href='https://play.google.com/store/apps/details?id=com.nicolueg.pantrist&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
